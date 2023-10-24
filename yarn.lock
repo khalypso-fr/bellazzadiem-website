@@ -748,6 +748,11 @@ astro-icon@^0.8.1:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
+astro-seo@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.8.0.tgz#4d930a8fc3e23fd1b9923486843b2a85febae35d"
+  integrity sha512-7gq6lhibCM8FuzZIJlbLLWP5EJ9KL2/4XqeFrAg9O6ZK2xMFxJ5ubKf+a0VJwwTu8W8Xr421CmpiXu6Hq7n/7Q==
+
 astro@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/astro/-/astro-3.1.4.tgz#6b29ffd0ce205649541893d2e93437b38e2427b3"
