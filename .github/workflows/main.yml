@@ -8,7 +8,7 @@ jobs:
     - name: Audit Netlify deploy preview
       uses: jakejarvis/lighthouse-action@master
       with:
-        netlify_site: 'blissful-heisenberg-16c40f.netlify.com'
+        netlify_site: 'charming-moonbeam-63c7cf.netlify.app'
     - uses: actions/upload-artifact@master
       with:
         name: report
