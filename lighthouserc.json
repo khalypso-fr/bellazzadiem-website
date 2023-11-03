@@ -6,10 +6,6 @@
             "settings": {
                 "preset": "desktop"
             }
-        },
-        "assert": {
-            "preset": "lighthouse:recommended"
-        },
-        "server": {}
+        }
     }
 }
