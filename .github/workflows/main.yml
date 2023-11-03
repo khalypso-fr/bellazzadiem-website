@@ -5,11 +5,10 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-    - name: Audit Netlify deploy preview
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        netlify_site: 'charming-moonbeam-63c7cf.netlify.app'
-    - uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install && npm install -g @lhci/cli@0.12.x
+      - run: npm run build
+      - run: lhci autorun
