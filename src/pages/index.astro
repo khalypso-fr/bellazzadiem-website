@@ -1,25 +1,29 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import LinkFromHeader from "../components/LinkFromHeader.astro";
 import Layout from "../layouts/Layout.astro";
-import Icon from "astro-icon";
 ---
 
 <Layout title="Bellezza di Em">
-  <main class="h-screen flex items-center">
-    <div class="mx-auto text-center flex items-center flex-col gap-2">
+  <main class="container mx-auto p-3">
+    <div class="flex justify-between my-6">
       <Header />
       <div class="flex flex-row gap-1">
-        <a href="https://instagram.com/bellezzadi_em" aria-label="Aller sur la page instagram de bellezzadi_em">
-          <Icon name="mdi:instagram" size={40} />
-        </a>
-        <a href="mailto:hello@bellezzadiem.fr" aria-label="Envoyer un mail à hello@bellezzadiem.fr">
-          <Icon name="mdi:at" size={40} />
-        </a>
+        <LinkFromHeader
+          href="https://instagram.com/bellezzadi_em"
+          ariaLabel="Aller sur la page instagram de bellezzadi_em"
+          iconName="mdi:instagram"
+        />
+        <LinkFromHeader
+          href="mailto:hello@bellezzadiem.fr"
+          ariaLabel="Envoyer un mail à hello@bellezzadiem.fr"
+          iconName="mdi:at"
+        />
       </div>
-      <div class="absolute bottom-2">
-        <Footer />
-      </div>
+    </div>
+    <div class="container text-center absolute bottom-2">
+      <Footer />
     </div>
   </main>
 </Layout>
