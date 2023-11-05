@@ -69,6 +69,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/sitemap@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "@astrojs/sitemap@npm:3.0.3"
+  dependencies:
+    sitemap: "npm:^7.1.1"
+    zod: "npm:^3.22.4"
+  checksum: 8f785c6f3430e3d9c7e60a0012a6aabdb4b8d9b5499df830ec09eb77572f615739992d46d1be31b368cac627c6cbf967d3d4e110940d0e41c14ea2806758ec98
+  languageName: node
+  linkType: hard
+
 "@astrojs/tailwind@npm:^5.0.2":
   version: 5.0.2
   resolution: "@astrojs/tailwind@npm:5.0.2"
@@ -740,6 +750,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@khalypso/bellazzadiem@workspace:."
   dependencies:
+    "@astrojs/sitemap": "npm:^3.0.3"
     "@astrojs/tailwind": "npm:^5.0.2"
     "@fontsource/dancing-script": "npm:^5.0.15"
     astro: "npm:^3.4.3"
@@ -921,10 +932,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:*":
+  version: 20.8.10
+  resolution: "@types/node@npm:20.8.10"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: caaa3ae9294f1bfdacb029a916c64af63cbcea613a52f53ea86f93c91779859af177b2b68113ef835194519f5e76cadda08559929b68297f1a8a568c207f9f66
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.5":
+  version: 17.0.45
+  resolution: "@types/node@npm:17.0.45"
+  checksum: 0db377133d709b33a47892581a21a41cd7958f22723a3cc6c71d55ac018121382de42fbfc7970d5ae3e7819dbe5f40e1c6a5174aedf7e7964e9cb8fa72b580b0
+  languageName: node
+  linkType: hard
+
 "@types/parse5@npm:^6.0.0":
   version: 6.0.3
   resolution: "@types/parse5@npm:6.0.3"
   checksum: a7c7ef6625974b74b93c1105953003a2291897e453369efcadc569b907de2784d61d4e6905de3ef959fa07f3278f41ed0c22ead0173776023fc43b6ed31042d0
+  languageName: node
+  linkType: hard
+
+"@types/sax@npm:^1.2.1":
+  version: 1.2.6
+  resolution: "@types/sax@npm:1.2.6"
+  dependencies:
+    "@types/node": "npm:*"
+  checksum: b36daf6b09d934679c5b986aaaac7aa86b53cee3ef0b26415cd2f381fa66ec9f87c496eb73c76bbcef74775a5da6d2bc7aa9dea89c6042bb43cd2a7303cc550b
   languageName: node
   linkType: hard
 
@@ -1049,7 +1085,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arg@npm:^5.0.2":
+"arg@npm:^5.0.0, arg@npm:^5.0.2":
   version: 5.0.2
   resolution: "arg@npm:5.0.2"
   checksum: ccaf86f4e05d342af6666c569f844bec426595c567d32a8289715087825c2ca7edd8a3d204e4d2fb2aa4602e09a57d0c13ea8c9eea75aac3dbb4af5514e6800e
@@ -4946,6 +4982,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sitemap@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "sitemap@npm:7.1.1"
+  dependencies:
+    "@types/node": "npm:^17.0.5"
+    "@types/sax": "npm:^1.2.1"
+    arg: "npm:^5.0.0"
+    sax: "npm:^1.2.4"
+  bin:
+    sitemap: dist/cli.js
+  checksum: d25abe5c78f08e6014792e0f4d59353042a5a795788decdd87cb03bda736d248426a618e5028e18325f04b3e9d0ecb02d126ed6177365aa2703fa77df8f4f4e0
+  languageName: node
+  linkType: hard
+
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -5371,6 +5421,13 @@ __metadata:
   version: 2.19.0
   resolution: "type-fest@npm:2.19.0"
   checksum: a5a7ecf2e654251613218c215c7493574594951c08e52ab9881c9df6a6da0aeca7528c213c622bc374b4e0cb5c443aa3ab758da4e3c959783ce884c3194e12cb
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
   languageName: node
   linkType: hard
 
