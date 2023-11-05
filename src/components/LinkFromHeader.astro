@@ -1,0 +1,19 @@
+---
+import Icon from "astro-icon";
+
+interface Props {
+  href: string;
+  iconName: string;
+  ariaLabel: string;
+}
+
+const { href, iconName, ariaLabel } = Astro.props;
+---
+
+<a
+  href={href}
+  aria-label={ariaLabel}
+  class="hover:bg-bellezzadiem-text hover:text-white transition-colors rounded-full p-2"
+>
+  <Icon name={iconName} size={40} />
+</a>

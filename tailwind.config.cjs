@@ -6,11 +6,11 @@ module.exports = {
       fontFamily: {
         dancingScript: ["Dancing Script"],
       },
-    },
-    colors: {
-      bellezzadiem: {
-        bg: "#E1DCD0",
-        text: "#554A37",
+      colors: {
+        bellezzadiem: {
+          bg: "#E1DCD0",
+          text: "#554A37",
+        },
       },
     },
   },
