@@ -1,7 +1,9 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Hero from "../components/Hero/Hero.astro";
 import LinkFromHeader from "../components/LinkFromHeader.astro";
+import Pricing from "../components/Pricing.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -22,7 +24,9 @@ import Layout from "../layouts/Layout.astro";
         />
       </div>
     </div>
-    <div class="container text-center absolute bottom-2">
+    <Hero />
+    <Pricing />
+    <div class="container text-center mt-6">
       <Footer />
     </div>
   </main>
