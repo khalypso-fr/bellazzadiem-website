@@ -3,8 +3,27 @@ import { z } from "astro/zod";
 import ContactForm from "../components/ContactForm.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import { request } from "http";
 import Icon from "astro-icon";
+import nodemailer from "nodemailer";
+
+const emailConfiguration = z
+  .object({
+    SMTP_HOST: z.string(),
+    SMTP_PORT: z.coerce.number(),
+    SMTP_AUTH_USER: z.string(),
+    SMTP_AUTH_PASSWORD: z.string(),
+  })
+  .parse(import.meta.env);
+
+const transporter = nodemailer.createTransport({
+  host: emailConfiguration.SMTP_HOST,
+  port: emailConfiguration.SMTP_PORT,
+  secure: true,
+  auth: {
+    user: emailConfiguration.SMTP_AUTH_USER,
+    pass: emailConfiguration.SMTP_AUTH_PASSWORD,
+  },
+});
 
 const FormSchema = z.object({
   firstName: z.string(),
@@ -13,7 +32,6 @@ const FormSchema = z.object({
   phoneNumber: z.string().optional(),
   request: z.string(),
   message: z.string(),
-  attachments: z.custom<File[]>().optional(),
 });
 
 if (Astro.request.method === "POST") {
@@ -22,14 +40,26 @@ if (Astro.request.method === "POST") {
     firstName: formData.get("firstName"),
     lastName: formData.get("lastName"),
     email: formData.get("email"),
-    phoneNumber: formData.get("phoneNumber"),
+    phoneNumber: formData.get("phoneNumber") ?? undefined,
     request: formData.get("request"),
     message: formData.get("message"),
-    attachments: formData.get("attachments"),
   });
   if (!response.success) {
     return Astro.redirect("/contact?errorSendingMessage");
   }
+  const { email, request, firstName, lastName, message, phoneNumber } =
+    response.data;
+
+  await transporter.sendMail({
+    from: '"Bellezza di Em" <hello@bellezzadiem.fr>',
+    to: ["hello@bellezzadiem.fr", email],
+    subject: `${request} - ${firstName} ${lastName}`,
+    text: `
+    ${message}
+
+    ${phoneNumber}
+    `,
+  });
 }
 ---
 
