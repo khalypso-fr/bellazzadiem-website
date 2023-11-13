@@ -1,0 +1,101 @@
+---
+import Icon from "astro-icon";
+---
+
+<div
+  class="w-full md:w-[600px] text-bellezzadiem-text p-4 border-2 border-bellezzadiem-text rounded-md"
+>
+  <form method="post" action="/contact">
+    <div class="flex flex-col md:flex-row gap-2">
+      <div class="mb-3 grow">
+        <label for="firstName" class="block mb-2 text-sm font-medium"
+          >Prénom *</label
+        >
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="Jeanne"
+          required
+        />
+      </div>
+      <div class="mb-3 grow">
+        <label for="lastName" class="block mb-2 text-sm font-medium"
+          >Nom *</label
+        >
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="Dupont"
+          required
+        />
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="block mb-2 text-sm font-medium">E-mail *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="hello@bellezzadiem.fr"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="phoneNumber" class="block mb-2 text-sm font-medium"
+        >Numéro de téléphone (optionnel)</label
+      >
+      <input
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="0600000000"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="request" class="block mb-2 text-sm font-medium"
+        >Votre demande *</label
+      >
+      <select
+        id="request"
+        name="request"
+        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required
+      >
+        <option>Devis nail art</option>
+        <option>Information</option>
+        <option>Question rendez-vous</option>
+        <option>Annulation</option>
+        <option>Autres</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="block mb-2 text-sm font-medium"
+        >Votre message *</label
+      >
+      <textarea
+        id="message"
+        name="message"
+        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        required></textarea>
+    </div>
+    <div class="flex justify-between gap-2">
+      <input
+        type="file"
+        name="attachments"
+        multiple
+        class="flex px-2 py-1 border rounded-md gap-1 mt-5 bg-bellezzadiem-text text-white hover:bg-gray-700 items-center"
+      />
+      <button
+        type="submit"
+        class="flex px-2 py-1 border rounded-md gap-1 mt-5 bg-bellezzadiem-text text-white hover:bg-gray-700 items-center"
+        ><Icon name="uil:fast-mail" size={25} /><span>Envoyer</span></button
+      >
+    </div>
+  </form>
+</div>

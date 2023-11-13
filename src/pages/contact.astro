@@ -1,0 +1,60 @@
+---
+import { z } from "astro/zod";
+import ContactForm from "../components/ContactForm.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import { request } from "http";
+import Icon from "astro-icon";
+
+const FormSchema = z.object({
+  firstName: z.string(),
+  lastName: z.string(),
+  email: z.string().email(),
+  phoneNumber: z.string().optional(),
+  request: z.string(),
+  message: z.string(),
+  attachments: z.custom<File[]>().optional(),
+});
+
+if (Astro.request.method === "POST") {
+  const formData = await Astro.request.formData();
+  const response = FormSchema.safeParse({
+    firstName: formData.get("firstName"),
+    lastName: formData.get("lastName"),
+    email: formData.get("email"),
+    phoneNumber: formData.get("phoneNumber"),
+    request: formData.get("request"),
+    message: formData.get("message"),
+    attachments: formData.get("attachments"),
+  });
+  if (!response.success) {
+    return Astro.redirect("/contact?errorSendingMessage");
+  }
+}
+---
+
+<Layout title="Bellezza di Em - Mentions légales">
+  <main class="container mx-auto p-3">
+    <div class="my-6">
+      <Header />
+    </div>
+    {
+      Astro.url.searchParams.get("errorSendingMessage") !== null && (
+        <div
+          class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50"
+          role="alert"
+        >
+          <a href="contact">
+            <Icon name="uil:multiply" size={20} class="inline-block mr-3" />
+          </a>
+          <span class="font-medium">Oups!</span>
+          Impossible d'envoyer le formulaire. Vérifiez d'avoir rempli les champs
+          nécessaires correctement.
+        </div>
+      )
+    }
+    <section class="flex justify-center">
+      <ContactForm />
+    </section>
+  </main>
+</Layout>
