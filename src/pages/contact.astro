@@ -13,12 +13,7 @@ const emailConfiguration = z
     SMTP_AUTH_USER: z.string(),
     SMTP_AUTH_PASSWORD: z.string(),
   })
-  .parse({
-    SMTP_HOST: "",
-    SMTP_PORT: "465",
-    SMTP_AUTH_USER: "",
-    SMTP_AUTH_PASSWORD: "",
-  });
+  .parse(import.meta.env);
 
 const transporter = nodemailer.createTransport({
   host: emailConfiguration.SMTP_HOST,
