@@ -13,7 +13,12 @@ const emailConfiguration = z
     SMTP_AUTH_USER: z.string(),
     SMTP_AUTH_PASSWORD: z.string(),
   })
-  .parse(import.meta.env);
+  .parse({
+    SMTP_HOST: "",
+    SMTP_PORT: "465",
+    SMTP_AUTH_USER: "",
+    SMTP_AUTH_PASSWORD: "",
+  });
 
 const transporter = nodemailer.createTransport({
   host: emailConfiguration.SMTP_HOST,
@@ -60,6 +65,7 @@ if (Astro.request.method === "POST") {
     ${phoneNumber}
     `,
   });
+  return Astro.redirect("/contact?success");
 }
 ---
 
@@ -68,10 +74,13 @@ if (Astro.request.method === "POST") {
     <div class="my-6">
       <Header />
     </div>
+    <section class="flex justify-center">
+      <ContactForm />
+    </section>
     {
       Astro.url.searchParams.get("errorSendingMessage") !== null && (
         <div
-          class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50"
+          class="p-4 mt-4 text-sm text-red-800 rounded-lg bg-red-50"
           role="alert"
         >
           <a href="contact">
@@ -83,8 +92,19 @@ if (Astro.request.method === "POST") {
         </div>
       )
     }
-    <section class="flex justify-center">
-      <ContactForm />
-    </section>
+    {
+      Astro.url.searchParams.get("success") !== null && (
+        <div
+          class="p-4 mt-4 text-sm text-green-800 rounded-lg bg-green-50"
+          role="alert"
+        >
+          <a href="contact">
+            <Icon name="uil:multiply" size={20} class="inline-block mr-3" />
+          </a>
+          <span class="font-medium">Envoyé!</span>
+          Votre message a été envoyé avec succès.
+        </div>
+      )
+    }
   </main>
 </Layout>
