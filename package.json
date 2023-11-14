@@ -21,7 +21,7 @@
     "nodemailer": "^6.9.7",
     "tailwindcss": "^3.3.5"
   },
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/node": "18",
     "@types/nodemailer": "^6.4.14"
