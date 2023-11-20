@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import myImage from "./undraw_payments.svg";
+---
+
+<div class="flex items-center my-10 bg-bellezzadiem-text rounded-md shadow-md">
+  <Image
+    class="hidden lg:block w-80 bg-bellezzadiem-bg m-4 p-4 rounded-md"
+    src={myImage}
+    alt="Illustration des moyens de paiement"
+  />
+  <div>
+    <h3>Moyens de paiement</h3>
+    <ul>
+      <li>Espèces</li>
+      <li>Paypal</li>
+      <li>Carte bleue</li>
+    </ul>
+  </div>
+</div>
