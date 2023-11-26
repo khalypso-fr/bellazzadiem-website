@@ -1,0 +1,16 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const bookingUrl =
+  "https://bookme.khalypso.fr/booking/new/92c05cfd-c454-4fa0-af6d-31ceda7d9749";
+---
+
+<Layout title="Bellezza di Em - Réservation">
+  <main class="container mx-auto p-3">
+    <div class="my-6">
+      <Header />
+    </div>
+    <iframe src={bookingUrl} width="100%" height="800px"></iframe>
+  </main>
+</Layout>
