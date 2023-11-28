@@ -1,22 +1,40 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import myImage from "./hero_image.jpg";
 ---
 
 <section>
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">L'élégance jusqu'au bout des ongles</h2>
-            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">Entreprise individuelle de prothésie ongulaire située à Cergy</p>
-            <a href="/reservation" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-bellezzadiem-text focus:ring-4 focus:ring-primary-300">
-                Prendre RDV
-            </a>
-            <a href="#tarifs" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bellezzadiem-text border border-bellezzadiem-text rounded-lg focus:ring-4">
-                Tarifs
-            </a> 
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <Image class="rounded-xl shadow-2xl" src={myImage} alt="Une étagère de vernis. Henry & Co. (@hngstrm)" />
-        </div>                
+  <div
+    class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+  >
+    <div class="mr-auto place-self-center lg:col-span-7">
+      <h2
+        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+      >
+        L'élégance jusqu'au bout des ongles
+      </h2>
+      <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+        Entreprise individuelle de prothésie ongulaire située à Cergy
+      </p>
+      <a
+        href="https://bookme.khalypso.fr/bellezzadiem"
+        class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-bellezzadiem-text focus:ring-4 focus:ring-primary-300"
+      >
+        Prendre RDV
+      </a>
+      <a
+        href="#tarifs"
+        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bellezzadiem-text border border-bellezzadiem-text rounded-lg focus:ring-4"
+      >
+        Tarifs
+      </a>
     </div>
+    <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+      <Image
+        class="rounded-xl shadow-2xl"
+        src={myImage}
+        alt="Une étagère de vernis. Henry & Co. (@hngstrm)"
+      />
+    </div>
+  </div>
 </section>
