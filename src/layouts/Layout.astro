@@ -35,6 +35,18 @@ const { title } = Astro.props;
       }}
     />
     <ViewTransitions />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6F0C2JB2B"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-R6F0C2JB2B");
+    </script>
   </head>
   <body class="bg-bellezzadiem-bg text-bellezzadiem-text">
     <slot />
