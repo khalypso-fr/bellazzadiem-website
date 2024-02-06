@@ -11,15 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^3.1.0",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.3",
+    "@astrojs/netlify": "^5.0.1",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource/dancing-script": "^5.0.16",
-    "astro": "^4.0.3",
-    "astro-icon": "^0.8.2",
+    "@iconify-json/mdi": "^1.1.64",
+    "astro": "^4.3.3",
+    "astro-icon": "^1.1.0",
     "astro-seo": "^0.8.0",
-    "nodemailer": "^6.9.7",
-    "tailwindcss": "^3.3.6"
+    "nodemailer": "^6.9.9",
+    "tailwindcss": "^3.4.1"
   },
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
