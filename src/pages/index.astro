@@ -2,33 +2,13 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import OnglerieHero from "../features/onglerie/components/OnglerieHero.astro";
-import LinkFromHeader from "../components/LinkFromHeader.astro";
 import Pricing from "../features/onglerie/components/Pricing.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bellezza di Em">
   <main class="container mx-auto p-3">
-    <div class="flex justify-between my-6">
-      <Header />
-      <div class="flex flex-row gap-1">
-        <LinkFromHeader
-          href="https://instagram.com/bellezzadi_em"
-          ariaLabel="Aller sur la page instagram de bellezzadi_em"
-          iconName="mdi:instagram"
-        />
-        <LinkFromHeader
-          href="https://www.facebook.com/profile.php?id=61553612530846"
-          ariaLabel="Aller sur la page facebook de Bellezza di Em"
-          iconName="mdi:facebook"
-        />
-        <LinkFromHeader
-          href="mailto:hello@bellezzadiem.fr"
-          ariaLabel="Envoyer un mail à hello@bellezzadiem.fr"
-          iconName="mdi:at"
-        />
-      </div>
-    </div>
+    <Header />
     <OnglerieHero />
     <Pricing />
     <div class="container text-center mt-6">

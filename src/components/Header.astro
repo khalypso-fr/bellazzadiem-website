@@ -1,3 +1,23 @@
-<header class="font-dancingScript text-4xl text-center cursor-default">
-  <h1><a href="/">Bellezza di Em</a></h1>
+---
+import LinkFromHeader from "./LinkFromHeader.astro";
+---
+<header class="flex justify-between my-6">
+  <h1 class="font-dancingScript text-4xl text-center cursor-default"><a href="/">Bellezza di Em</a></h1>
+  <nav class="flex flex-row gap-1">
+    <LinkFromHeader
+      href="https://instagram.com/bellezzadi_em"
+      ariaLabel="Aller sur la page instagram de bellezzadi_em"
+      iconName="mdi:instagram"
+    />
+    <LinkFromHeader
+      href="https://www.facebook.com/profile.php?id=61553612530846"
+      ariaLabel="Aller sur la page facebook de Bellezza di Em"
+      iconName="mdi:facebook"
+    />
+    <LinkFromHeader
+      href="mailto:hello@bellezzadiem.fr"
+      ariaLabel="Envoyer un mail à hello@bellezzadiem.fr"
+      iconName="mdi:at"
+    />
+  </nav>
 </header>
