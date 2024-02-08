@@ -18,23 +18,26 @@ import myImage from "../assets/hero_image.jpg";
       </p>
       <a
         href="https://cal.com/bellezzadiem"
-        class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-bellezzadiem-text focus:ring-4 focus:ring-primary-300"
+        class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-bellezzadiem-text focus:ring-4 focus:ring-primary-300 transition-all hover:shadow-lg hover:-translate-y-1"
       >
         Prendre RDV
       </a>
       <a
         href="#tarifs"
-        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bellezzadiem-text border border-bellezzadiem-text rounded-lg focus:ring-4"
+        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bellezzadiem-text border border-bellezzadiem-text rounded-lg focus:ring-4 transition-all hover:shadow-lg hover:-translate-y-1"
       >
         Tarifs
       </a>
     </div>
     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <Image
-        class="rounded-xl shadow-2xl"
-        src={myImage}
-        alt="Une étagère de vernis. Henry & Co. (@hngstrm)"
-      />
+      <div class="flex flex-col text-right">
+        <Image
+          class="rounded-xl shadow-2xl"
+          src={myImage}
+          alt="Une étagère de vernis. Henry & Co. (@hngstrm)"
+        />
+        <span class="italic mt-1"><a href="https://www.instagram.com/hngstrm" class="hover:underline">@hngstrm</a></span>
+      </div>
     </div>
   </div>
 </section>
