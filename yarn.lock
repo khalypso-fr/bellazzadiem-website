@@ -75,16 +75,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/netlify@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@astrojs/netlify@npm:5.0.1"
+"@astrojs/netlify@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@astrojs/netlify@npm:5.1.0"
   dependencies:
     "@astrojs/underscore-redirects": "npm:^0.3.3"
     "@netlify/functions": "npm:^2.0.1"
     esbuild: "npm:^0.19.5"
   peerDependencies:
     astro: ^4.2.0
-  checksum: 10c0/33045b5dafcf4cdb78bb508912748c21fd921157cfcb327a9f427b15a4290f97d9f02e7a968ac8f92c4d94247ccb0f36c50fb36fcbd4bea831a88a8585f6caf4
+  checksum: 10c0/b64b68b5fed8fcac218513529d47d96fce9216c4b633a50b81c6cb810c2ab8536817b8f9e668de1fd797e5ba1d946be6f85abbe25fb1338dbf3041dab05a704e
   languageName: node
   linkType: hard
 
@@ -767,14 +767,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@khalypso/bellazzadiem@workspace:."
   dependencies:
-    "@astrojs/netlify": "npm:^5.0.1"
+    "@astrojs/netlify": "npm:^5.1.0"
     "@astrojs/sitemap": "npm:^3.0.5"
     "@astrojs/tailwind": "npm:^5.1.0"
     "@fontsource/dancing-script": "npm:^5.0.16"
     "@iconify-json/mdi": "npm:^1.1.64"
     "@iconify-json/uil": "npm:^1.1.8"
     "@types/nodemailer": "npm:^6.4.14"
-    astro: "npm:^4.3.3"
+    astro: "npm:^4.3.5"
     astro-icon: "npm:^1.1.0"
     astro-seo: "npm:^0.8.0"
     nodemailer: "npm:^6.9.9"
@@ -1296,9 +1296,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^4.3.3":
-  version: 4.3.3
-  resolution: "astro@npm:4.3.3"
+"astro@npm:^4.3.5":
+  version: 4.3.5
+  resolution: "astro@npm:4.3.5"
   dependencies:
     "@astrojs/compiler": "npm:^2.5.3"
     "@astrojs/internal-helpers": "npm:0.2.1"
@@ -1370,7 +1370,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/0990d2a2bac88c04449da1f321878bb68f0f9938d8ff33b158cfb30252e75c508fe537b97660a3cbdda39e941938a2ed40b4931bf9218f862ffcd80a26f24e8d
+  checksum: 10c0/cf2b499a9c04c25b22eb74f568673708255a6e025c1db65b6b970ebc53f33e7504af92146590b88ac186e6695d20417e5a11eaeb33f80161f59cdfef4a949755
   languageName: node
   linkType: hard
 
