@@ -11,19 +11,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.1.0",
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/netlify": "^5.5.1",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/dancing-script": "^5.0.16",
-    "@iconify-json/mdi": "^1.1.64",
-    "@iconify-json/uil": "^1.1.8",
-    "astro": "^4.3.5",
+    "@fontsource/dancing-script": "^5.0.18",
+    "@iconify-json/mdi": "^1.1.68",
+    "@iconify-json/uil": "^1.1.9",
+    "astro": "^4.14.2",
     "astro-icon": "^1.1.0",
-    "astro-seo": "^0.8.0",
-    "nodemailer": "^6.9.9",
-    "tailwindcss": "^3.4.1"
+    "astro-seo": "^0.8.4",
+    "nodemailer": "^6.9.14",
+    "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.14"
-  }
+    "@types/nodemailer": "^6.4.15"
+  },
+  "packageManager": "yarn@4.4.0"
 }
