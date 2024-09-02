@@ -891,12 +891,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/uil@npm:^1.1.9":
-  version: 1.1.9
-  resolution: "@iconify-json/uil@npm:1.1.9"
+"@iconify-json/uil@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@iconify-json/uil@npm:1.2.0"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/b4c708b1a324449b2124cfa4dce8777f18c42ecf15cea041c6cd5da1b296b5c117408ca17d5f26748c2579b5f28460001808c2c5433e8835bb3d57a0bd074333
+  checksum: 10c0/7538b5d0ea3b9fa3550882ffd5693bcc6c7ca7a3c65c28bf926483012334876ec27e4cc89a90db40a75d4f388c9d87078db4a5d3d5601efcebd93d0d91159754
   languageName: node
   linkType: hard
 
@@ -1216,7 +1216,7 @@ __metadata:
     "@astrojs/tailwind": "npm:^5.1.0"
     "@fontsource/dancing-script": "npm:^5.0.19"
     "@iconify-json/mdi": "npm:^1.1.68"
-    "@iconify-json/uil": "npm:^1.1.9"
+    "@iconify-json/uil": "npm:^1.2.0"
     "@types/nodemailer": "npm:^6.4.15"
     astro: "npm:^4.14.5"
     astro-icon: "npm:^1.1.1"
