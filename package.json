@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/dancing-script": "^5.0.19",
-    "@iconify-json/mdi": "^1.1.68",
+    "@iconify-json/mdi": "^1.2.0",
     "@iconify-json/uil": "^1.2.0",
     "astro": "^4.14.5",
     "astro-icon": "^1.1.1",
