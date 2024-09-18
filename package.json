@@ -17,7 +17,7 @@
     "@fontsource/dancing-script": "^5.0.19",
     "@iconify-json/mdi": "^1.2.0",
     "@iconify-json/uil": "^1.2.0",
-    "astro": "^4.15.4",
+    "astro": "^4.15.7",
     "astro-icon": "^1.1.1",
     "astro-seo": "^0.8.4",
     "nodemailer": "^6.9.15",
