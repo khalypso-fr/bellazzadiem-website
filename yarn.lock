@@ -730,10 +730,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/dancing-script@npm:^5.0.19":
-  version: 5.0.19
-  resolution: "@fontsource/dancing-script@npm:5.0.19"
-  checksum: 10c0/6852236354f8cd0c0a143aee01c7906fbcfcfed06646922d48d2c9898897eb34804a14047abc594effc651746d6383b89bc95ff0ec30c106d4743808c4d040c9
+"@fontsource/dancing-script@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@fontsource/dancing-script@npm:5.1.0"
+  checksum: 10c0/d64136302f2fcf12ca60b8f3fc0941ed3e33c6536963ef07ad7b44eb165ca433fc4abdfb6f3fd832dfc365323c10833276eb17a398cd5254e14b46ea1f335343
   languageName: node
   linkType: hard
 
@@ -1069,7 +1069,7 @@ __metadata:
     "@astrojs/netlify": "npm:^5.5.3"
     "@astrojs/sitemap": "npm:^3.1.6"
     "@astrojs/tailwind": "npm:^5.1.1"
-    "@fontsource/dancing-script": "npm:^5.0.19"
+    "@fontsource/dancing-script": "npm:^5.1.0"
     "@iconify-json/mdi": "npm:^1.2.0"
     "@iconify-json/uil": "npm:^1.2.0"
     "@types/nodemailer": "npm:^6.4.16"
