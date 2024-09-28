@@ -24,8 +24,8 @@
     "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.15",
-    "typescript": "^5.5.4"
+    "@types/nodemailer": "^6.4.16",
+    "typescript": "^5.6.2"
   },
   "packageManager": "yarn@4.4.0"
 }
