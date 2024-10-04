@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^5.5.3",
-    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^5.1.1",
     "@fontsource/dancing-script": "^5.1.0",
     "@iconify-json/mdi": "^1.2.0",
