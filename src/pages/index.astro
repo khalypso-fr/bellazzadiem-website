@@ -1,18 +1,13 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import OnglerieHero from "../features/onglerie/components/OnglerieHero.astro";
-import Pricing from "../features/onglerie/components/Pricing.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Bellezza di Em">
-  <main class="container mx-auto p-3">
-    <Header />
-    <OnglerieHero />
-    <Pricing />
-    <div class="container text-center mt-6">
-      <Footer />
-    </div>
+  <main class="flex flex-col items-center justify-center h-screen">
+    <h1
+      class="font-dancingScript text-6xl text-center cursor-default transition-all drop-shadow-sm hover:drop-shadow-md"
+    >
+      <a href="/">Bellezza di Em</a>
+    </h1>
   </main>
 </Layout>

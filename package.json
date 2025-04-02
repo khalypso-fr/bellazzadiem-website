@@ -11,21 +11,21 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.5.3",
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/tailwind": "^5.1.1",
-    "@fontsource/dancing-script": "^5.1.0",
-    "@iconify-json/mdi": "^1.2.0",
-    "@iconify-json/uil": "^1.2.0",
-    "astro": "^4.15.10",
-    "astro-icon": "^1.1.1",
+    "@astrojs/netlify": "^5.5.4",
+    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/tailwind": "^5.1.5",
+    "@fontsource/dancing-script": "^5.2.5",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/uil": "^1.2.3",
+    "astro": "^4.16.18",
+    "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
-    "nodemailer": "^6.9.15",
-    "tailwindcss": "^3.4.13"
+    "nodemailer": "^6.10.0",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.16",
-    "typescript": "^5.6.2"
+    "@types/nodemailer": "^6.4.17",
+    "typescript": "^5.8.2"
   },
   "packageManager": "yarn@4.4.0"
 }
