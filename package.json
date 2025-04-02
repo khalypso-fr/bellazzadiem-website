@@ -11,21 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.5.4",
+    "@astrojs/netlify": "6.2.5",
     "@astrojs/sitemap": "^3.3.0",
-    "@astrojs/tailwind": "^5.1.5",
     "@fontsource/dancing-script": "^5.2.5",
-    "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/uil": "^1.2.3",
-    "astro": "^4.16.18",
-    "astro-icon": "^1.1.5",
+    "@tailwindcss/vite": "^4.1.0",
+    "astro": "5.5.6",
     "astro-seo": "^0.8.4",
-    "nodemailer": "^6.10.0",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.17",
     "typescript": "^5.8.2"
-  },
-  "packageManager": "yarn@4.4.0"
+  }
 }

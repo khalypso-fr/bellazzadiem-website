@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-dancing-script: Dancing Script;
+
+  --color-bellezzadiem-primary-bg: #e1dcd0;
+  --color-bellezzadiem-primary-text: #554a37;
+}
