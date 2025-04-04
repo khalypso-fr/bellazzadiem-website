@@ -14,7 +14,7 @@
     "@astrojs/netlify": "6.2.5",
     "@astrojs/sitemap": "^3.3.0",
     "@fontsource/dancing-script": "^5.2.5",
-    "@tailwindcss/vite": "^4.1.1",
+    "@tailwindcss/vite": "^4.1.2",
     "astro": "5.5.6",
     "astro-seo": "^0.8.4",
     "tailwindcss": "^4.1.1"
